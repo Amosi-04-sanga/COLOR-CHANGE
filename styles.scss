@@ -1,0 +1,53 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    width: 80%;
+    text-transform: capitalize;
+    margin: 50px auto;
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    background-color: rgb(165, 136, 136);
+
+    text-transform: capitalize;
+    letter-spacing: 7px;
+    color: white;
+    font-style: oblique;
+
+    display: grid;
+    place-items: center;
+}
+
+.button {
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 40px);
+        grid-template-rows: repeat(2, 40px);
+        grid-gap: 7px;
+        place-content: center;
+        margin-top: 20px;
+    }
+
+}
+
